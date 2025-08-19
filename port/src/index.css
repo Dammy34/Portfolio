@@ -1,0 +1,206 @@
+*{
+    padding: none;
+    margin: none;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+}
+body{
+  background: #0A192F;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* height: 100%; */
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.05), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+h3{
+    color: silver;
+}
+h2{
+    color: #CCD6F6;
+}
+p{
+    color: #8892B0;
+}
+.foot{
+    display: flex;
+}
+.icon{
+    width: 35%;
+}
+.nav a{
+    text-decoration: none;
+    color: silver;
+    display: flex;
+}
+.navlist{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    justify-content: center;
+    margin-right: 2rem;
+}
+.proj{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-snap-type: x mandatory;
+    gap: 2rem;
+    background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+    background: transparent;
+}
+.proj-card{
+   flex: 0 0 auto;
+  width: 280px;
+  background: #112240;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 1rem;
+  scroll-snap-align: start;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.08), 0 10px 20px rgba(0, 0, 0, 0.5); 
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  backdrop-filter: blur(2px);
+}
+.proj-card img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 0.8rem;
+  object-fit: cover;
+}
+.nav-foot{
+    width: 20%;
+}
+.About{
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: purple;
+}
+@keyframes slideUp{
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+.ab{
+    animation: slideUp 0.8s ease-out forwards;
+}
+@keyframes slideLeft{
+    from{
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.About{
+    animation: slideLeft 0.8s ease-out forwards;
+}
+.home{
+    padding: 10px;
+    animation: slideUp 0.8s ease-in-out forwards;
+}
+.service{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.p-serv{
+    border-radius: 3rem 0.3rem;
+    background: #131313;
+    padding: 10px;
+    outline: transparent;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.08), 0 10px 20px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    backdrop-filter: blur(2px);
+}
+@keyframes slideIn{
+    from{
+    opacity: 0;
+    transform: translateX(100%);
+    visibility: hidden;
+    }
+    to{
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+    }
+}
+.p-serv:nth-child(1) {animation-delay: 0.1s;}
+.p-serv:nth-child(2) {animation-delay: 0.3s;}
+.p-serv:nth-child(3) {animation-delay: 0.5s;}
+.p-serv:nth-child(4) {animation-delay: 0.7s;}
+
+.p-serv{
+animation: slideIn 0.8s ease-in-out;
+}
+.profile{
+    width: 17%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wid h2{
+    text-align: center;
+    color: #CCD6F6;
+}
+.skill-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.skill-card{
+    background-color: #112240;
+    border-radius: 12px;
+    text-align: center;
+    width: 100px;
+}
+.skill-card img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+    background: none;
+    
+}
+.skill-card span{
+    color: #CCD6F6;
+    font-size: 0.9rem;
+}
+.hero2{
+    display: flex;
+    gap: 40%;
+}
+.s-btn{
+    border-radius: 15%;
+    height: 30px;
+    margin-top: 1rem;
+    background-color: #8892B0;
+    color: #CCD6F6;
+    border: none;
+}
