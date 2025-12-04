@@ -1,15 +1,15 @@
 import githubIcon from '../github.svg';
 import gmail from '../gmail.svg';
 import linkedIn from '../logmein.svg';
-import profilePic from '../assets/profile.jpg';
+import profilePic from '../assets/profilepic2.jpg';
 function Body() {
     return(
         <>
         <div>
             <div className='hero'>
                 <img src={profilePic} className='profile'/>
-            <p>Hi, i'm Dammy <br /> I'm an Electronics and Computer Engineering student, that's
-            passionate about creating modern, efficient, and user friendly digital solutions.</p>
+            <p>Hi, i'm Dammy <br /> I'm an Electronics and Computer Engineering student who builds sleek, responsiveweb apps that make technology 
+            feel effortless</p>
 
             </div>
                 <div className='hero2'>
